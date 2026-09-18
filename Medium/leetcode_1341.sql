@@ -7,7 +7,7 @@ group by u.user_id, u.name
 order by count(*) desc, u.name asc 
 limit 1)
 
-union 
+union all
 #Movie with the highest average rating
 (
     select m.title
